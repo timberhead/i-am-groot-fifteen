@@ -1,7 +1,7 @@
 {
-  "name": "JATE",
+  "name": "jate",
   "version": "1.0.0",
-  "description": "",
+  "description": "<h1 align=\"center\">PWA Text Editor</h1>",
   "main": "server.js",
   "scripts": {
     "start:dev": "",
@@ -21,5 +21,13 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timberhead/i-am-groot-fourteen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/timberhead/i-am-groot-fourteen/issues"
+  },
+  "homepage": "https://github.com/timberhead/i-am-groot-fourteen#readme"
 }

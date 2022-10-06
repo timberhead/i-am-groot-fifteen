@@ -6,7 +6,7 @@
 
 
 
-<h1 align="center">PWA</h1>
+<h1 align="center">PWA Text Editor</h1>
   
 ![badge](https://img.shields.io/badge/license-Apache-blue)<br/>
 ## Table of Contents
@@ -37,52 +37,65 @@ There are no issues at this time.
 
 ## User Story
 
-AS an average Joe with a favorite meal at a hole in the wall restaurant
+AS an average Joe 
 <br/>
-I WANT to share my review with as many other people as possible
+I WANT to create notes or code snippets with or without an internet connection
 <br/>
-SO THAT I can get the word out about this resturant and discover restaurants with great meals from other users reviews
+SO THAT I can reliably retrieve them for later use
 <br/>
 
 ## Acceptance Criteria
 
-GIVEN I am using the application "The Fair Fare"
+GIVEN I GIVEN a text editor web application
 <br/>
-WHEN I open the application
+WHEN I open my application in my editor
 <br/>
-THEN the webpage is displayed in the browser
+THEN I should see a client server folder structure
 <br/>
-WHEN I click on the Login/register button
+WHEN I run `npm run start` from the root directory
 <br/>
-THEN I am presented with a Login/Register form
+THEN I find that my application should start up the backend and serve the client
 <br/>
-WHEN I enter my username and password in the Register form
+WHEN I run the text editor application from my terminal
 <br/>
-THEN I am logged in and directed back to the webpage
+THEN I find that my JavaScript files have been bundled using webpack
 <br/>
-WHEN I click on the Category Selector button
+WHEN I run my webpack plugins
 <br/>
-THEN I am presented with a list of restaurants types
+THEN I find that I have a generated HTML file, service worker, and a manifest file
 <br/>
-WHEN I click on a resturant type
+WHEN I use next-gen JavaScript in my application
 <br/>
-THEN I am presented with multiple cards, each representing a local resturant and an image of their signature meal
+THEN I find that the text editor still functions in the browser without errors
 <br/>
-WHEN I click on a restaurant card
+WHEN I open the text editor
 <br/>
-THEN I am presented with the restaurant's rating and number of reviews, and the meal's rating and number of reviews
+THEN I find that IndexedDB has immediately created a database storage
 <br/>
-WHEN I click on a specific meal, and I haven't logged in
+WHEN I enter content and subsequently click off of the DOM window
 <br/>
-THEN I am directed back to the Login/Register form
+THEN I find that the content in the text editor has been saved with IndexedDB
 <br/>
-WHEN I click on a specific meal
+WHEN I reopen the text editor after closing it
 <br/>
-THEN I am presented with a form to add my own review for that meal
+THEN I find that the content in the text editor has been retrieved from our IndexedDB
 <br/>
-WHEN I complete my review and submit
+WHEN I click on the Install button
 <br/>
-THEN my review is added to the database for other users to view
+THEN I download my web application as an icon on my desktop
+<br/>
+WHEN I load my web application
+<br/>
+THEN I should have a registered service worker using workbox
+<br/>
+WHEN I register a service worker
+<br/>
+THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
+<br/>
+WHEN I deploy to Heroku
+<br/>
+THEN I should have proper build scripts for a webpack application
+<br/>
 
 ## Usage
 
@@ -106,11 +119,11 @@ npm test
 
 Link to our Github repository:
 <br/>
-https://github.com/timberhead/the-foo-d-s
+https://github.com/timberhead/i-am-groot-fifteen
 
 ## Deployed Links:
 
-Heroku git URL: https://the-fair-fare.herokuapp.com/
+Heroku git URL: https://
 
 <img src="./public/img/" alt="" width="500"/>
 
