@@ -46,12 +46,16 @@ export const getDb = async () => {
 
   const store = tx.objectStore("jate");
 
-  const request = store.getAll();
+  const request = store.get(1);
 
   const result = await request;
-  console.log("result.value", result);
-  return result;
+  result
+        ? console.log("result.value", result.value)
+        : console.log("data not found")
+  
+  return result?.value;
   
   // console.error('getDb not implemented');
 };
+
 initdb();

@@ -29,14 +29,21 @@ module.exports = () => {
         title: "jate"
       }),
 
+      new InjectManifest({
+        swSrc: "./src-sw.js",
+        swDest: "src-sw.js",
+      }),
+
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: "i-am-groot-text-editor",
         short_name: "jate",
         description: "long live jate",
         background_color: "#225ca3",
         theme_color: "#225ca3",
-        start_url: "./",
-        publicPath: "./",
+        start_url: "/",
+        publicPath: "/",
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
@@ -46,10 +53,6 @@ module.exports = () => {
         ]
       }),
 
-      new InjectManifest({
-        swSrc: "./src-sw.js",
-        swDest: "src-sw.js",
-      }),
     ],
 
     module: {
